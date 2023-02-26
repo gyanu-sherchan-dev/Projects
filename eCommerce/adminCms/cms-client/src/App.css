@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Cormorant Upright", serif; */
+  /* font-family: "Seaweed Script", cursive; */
+  font-family: "Berkshire Swash", cursive;
+}
+
+.glb-msg {
+  background: #455954;
+  padding: 8px;
+  min-height: 2.5rem;
+  color: white;
+}
+.header {
+  background: #9d69a3;
+}
+
+.footer {
+  min-height: 40px;
+  text-align: center;
+  padding: 40px;
+  background: #61707d;
+  color: white;
+}
+
+.children {
+  min-height: 73vh;
+  background: #dfdbd8;
+}
