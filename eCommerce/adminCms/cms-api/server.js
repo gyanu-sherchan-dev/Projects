@@ -1,4 +1,7 @@
 import express from "express";
+
+import cors from "cors";
+import morgan from "morgan";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -6,15 +9,17 @@ const PORT = process.env.PORT || 8000;
 
 const app = express();
 
-import cors from "cors";
-import morgan from "morgan";
-app.use(express());
+app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 
 //dbConnection
-import { dbConnect } from "./dbConfig/dbConfig.js";
+import { dbConnect } from "./src/dbConfig/dbConfig.js";
 dbConnect();
+
+//router
+import adminRouter from "./src/routers/AdminUserRouter.js";
+app.use("/api/v1/user", adminRouter);
 
 //uncaught url
 
@@ -33,9 +38,9 @@ app.use((error, req, res, next) => {
   try {
     const errCode = error.errorCode || 500;
     console.log(errCode);
-    res.statusCode(errCode).json({
+    res.json({
       status: "error",
-      message: "",
+      message: error.message,
     });
   } catch (error) {
     res.json({

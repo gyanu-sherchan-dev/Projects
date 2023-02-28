@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const dbUrl = "mongodb://localhost:27017";
+const dbUrl = "mongodb://localhost:27017/admin-cms";
 
 export const dbConnect = () => {
   try {
