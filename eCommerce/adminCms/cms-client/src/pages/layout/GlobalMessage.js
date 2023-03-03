@@ -7,9 +7,9 @@ const GlobalMessage = () => {
       <Container className="d-flex justify-content-between">
         <h6>Hello</h6>
         <div>
-          <i class="fa-brands fa-facebook text-info me-2"></i>
-          <i class="fa-brands fa-youtube text-danger me-2"></i>
-          <i class="fa-brands fa-instagram text-warning"></i>
+          <i className="fa-brands fa-facebook text-info me-2"></i>
+          <i className="fa-brands fa-youtube text-danger me-2"></i>
+          <i className="fa-brands fa-instagram text-warning"></i>
         </div>
       </Container>
     </div>

@@ -14,7 +14,7 @@
   color: white;
 }
 .header {
-  background: #9d69a3;
+  background: #c6a2c9;
 }
 
 .footer {
@@ -26,6 +26,26 @@
 }
 
 .children {
-  min-height: 73vh;
   background: #dfdbd8;
+  min-height: 77vh;
+  padding-top: 3rem;
+}
+
+/* Register */
+.reg-heading {
+  background: lightblue
+    url("https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80")
+    no-repeat fixed center;
+
+  backdrop-filter: blur(80%);
+}
+
+.reg-head-content {
+  margin: 6rem;
+  min-height: 8rem;
+  padding-top: 2rem;
+  background: #dfdbd830;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: -5px 5px 25px 10px;
 }

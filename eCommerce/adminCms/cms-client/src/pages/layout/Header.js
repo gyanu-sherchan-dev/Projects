@@ -15,7 +15,7 @@ export const Header = () => {
               <i class="fa-solid fa-id-card"></i> Register
             </Link>
             <Link className="nav-link" to="/">
-              <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+              <i className="fa-solid fa-arrow-right-from-bracket"></i> Logout
             </Link>
           </Nav>
         </Navbar.Collapse>

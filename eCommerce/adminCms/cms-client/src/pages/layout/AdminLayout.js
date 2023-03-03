@@ -5,12 +5,14 @@ import { Header } from "./Header";
 
 const AdminLayout = ({ children }) => {
   return (
-    <div>
+    <>
       <GlobalMessage />
       <Header />
+
       <div className="children">{children}</div>
+
       <Footer />
-    </div>
+    </>
   );
 };
 
